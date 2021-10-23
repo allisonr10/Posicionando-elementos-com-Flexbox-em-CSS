@@ -1,0 +1,77 @@
+
+    <style>
+        .flex{
+            max-width:  300px;
+            padding: 10px;
+            border: 2px solid red;
+            display: flex;
+        }
+        .item{
+            background-color: aqua;
+            margin: 5px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 45px;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .row-reverse div{
+            background-color: yellow;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .column div{
+            background-color: tomato;
+        }
+        /*  Aula 3  */
+        .wrap{
+          
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item"> 1</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+    </div>
+    <div class="flex row-reverse">
+        <div class="item"> 1</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+    </div>
+    <div class="flex column">
+        <div class="item"> 1</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+    </div>
+    <div class="flex wrap">
+        <div class="item"> 1</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+        <div class="item"> 4</div>
+        <div class="item"> 5</div>
+        <div class="item"> 6</div>
+    </div>
+    <div class="flex wrap-reverse">
+        <div class="item"> 1</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+        <div class="item"> 4</div>
+        <div class="item"> 5</div>
+        <div class="item"> 6</div>
+    </div>
+    
+</body>
+</html>
