@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 4</title>
+    <style>
+        .container{
+          max-width: 400px;
+          border: 1px solid red;
+          display: flex;
+        }
+        .item{
+           background-color: yellowgreen;
+           margin: 5px;
+           color: white;
+           text-align: center;
+           flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        /*alinhamento central*/
+
+        .central{
+            height: 300px;
+            justify-content: center;
+            
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Center</p>
+    <section class="container center">
+        <div class="item"> Lorem ipsum dolor sit amet.</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+        <div class="item"> Lorem ipsum dolor sit.</div>
+        <div class="item"> 5</div>
+    </section>
+
+    <p>Stretch</p>
+    <section class="container strectch">
+        <div class="item"> Lorem ipsum dolor sit amet.</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+        <div class="item"> Lorem ipsum dolor sit.</div>
+        <div class="item"> 5</div>
+    </section>
+
+    <p>Flex Start</p>
+    <section class="container flex-start">
+        <div class="item"> Lorem ipsum dolor sit amet.</div>
+        <div class="item"> 2</div>
+        <div class="item"> 3</div>
+        <div class="item"> Lorem ipsum dolor sit.</div>
+        <div class="item"> 5</div>
+    </section>
+
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Accusamus 
+            cumque seddio c
+            onsequuntur laboriosam voluptates nisi iure.
+
+        </div>
+
+    </section>
+
+    
+
+</body>
+</html>
